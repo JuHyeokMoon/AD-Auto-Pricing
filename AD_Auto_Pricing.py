@@ -25,7 +25,7 @@ def price_control(price,max_price):
     pyperclip.copy(userid)
     time.sleep(1)
     tag_id.send_keys(Keys.CONTROL, 'v')        # 윈도우
-    # tag_id.send_keys(Keys.COMMAND, 'v')        # 맥
+    # tag_id.send_keys(Keys.COMMAND, 'v')      # 맥
     time.sleep(1)
 
     # 비밀번호 복사
@@ -100,8 +100,8 @@ def searching(seq, price):
     print('[동작 시간] '+time.strftime('%Y.%m.%d - %H:%M'))
 
     # 네이버 쇼핑에서 제품 검색한 주소 (2PAGE)
-    url = "https://search.shopping.naver.com/search/all?adQuery=%EB%B9%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%84%B0&frm=NVSHATC&origQuery=%EB%B9%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%84%B0&pagingIndex=2&pagingSize=40&productSet=total&query=%EB%B9%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%84%B0&sort=rel&timestamp=&viewType=list"
-    # url = "https://search.shopping.naver.com/search/all?query=%EB%B9%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%84%B0&cat_id=&frm=NVSHATC"
+    url = "https://search.shopping.naver.com/search/all?"
+    # url = "https://search.shopping.naver.com/search/all?"
     driver = webdriver.Chrome()
     driver.get(url)
 
